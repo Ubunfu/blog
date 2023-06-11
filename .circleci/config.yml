@@ -26,11 +26,8 @@ jobs:
       - attach_workspace:
           at: /siteData
       - run:
-          name: "where am i"
-          command: "cd /siteData && pwd && ls -al"
-      - run:
           name: "Deploy Site"
-          command: "aws s3 cp /siteData s3://cold-storage.net"
+          command: "aws s3 cp --recursive /siteData s3://cold-storage.net"
 
 workflows:
   release:
