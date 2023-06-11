@@ -1,0 +1,41 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: klakegg/hugo
+    steps:
+      - checkout
+      - run:
+          name: "where am i"
+          command: "pwd && ls -al"
+      - run:
+          name: "Build Site"
+          command: "hugo"
+      - persist_to_workspace:
+          root: public
+          paths:
+            - "*"
+  deploy:
+    docker:
+      - image: amazon/aws-cli
+    steps:
+      - attach_workspace:
+          at: /siteData
+      - run:
+          name: "where am i"
+          command: "pwd && ls -al"
+      - run:
+          name: "Deploy Site"
+          command: "aws s3 cp /siteData s3://cold-storage.net"
+
+workflows:
+  release:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: main
