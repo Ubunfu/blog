@@ -1,5 +1,5 @@
-title = '418'
-baseURL = 'https://418.net/'
+title = 'cold storage'
+baseURL = 'https://cold-storage.net/'
 languageCode = 'en-us'
 theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
 
