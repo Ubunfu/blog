@@ -21,7 +21,7 @@ jobs:
       - image: amazon/aws-cli
     steps:
       - run:
-          name: "install tools"
+          name: "Install Tools"
           command: "yum install -y tar gzip"
       - attach_workspace:
           at: /siteData
