@@ -11,7 +11,7 @@ jobs:
           command: "pwd && ls -al"
       - run:
           name: "Install Hugo"
-          command: "sudo apt install hugo"
+          command: "sudo snap install hugo"
       - run:
           name: "Build Site"
           command: "hugo"
