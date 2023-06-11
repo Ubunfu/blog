@@ -21,13 +21,13 @@ jobs:
       - image: amazon/aws-cli
     steps:
       - run:
-          name: "install tar"
+          name: "install tools"
           command: "yum install -y tar gzip"
       - attach_workspace:
           at: /siteData
       - run:
           name: "where am i"
-          command: "pwd && ls -al"
+          command: "cd /siteData && pwd && ls -al"
       - run:
           name: "Deploy Site"
           command: "aws s3 cp /siteData s3://cold-storage.net"
