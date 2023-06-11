@@ -30,6 +30,10 @@ cleanDestinationDir = true
   name = "github"
   url = "https://github.com/Ubunfu"
 
+[[params.ananke_socials]]
+  name = "stackoverflow"
+  url = "https://stackoverflow.com/users/2162653/ubunfu"
+
 # Decent privacy config.  You're welcome.
 [privacy]
   [privacy.disqus]
