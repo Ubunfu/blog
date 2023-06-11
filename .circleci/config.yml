@@ -22,7 +22,7 @@ jobs:
     steps:
       - run:
           name: "install tar"
-          command: "yum install tar -y"
+          command: "yum install -y tar gzip"
       - attach_workspace:
           at: /siteData
       - run:
