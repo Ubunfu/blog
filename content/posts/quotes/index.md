@@ -2,7 +2,11 @@
 title: "Cerebral Quotes"
 date: 2023-07-16T19:13:41-04:00
 lastmod: 2023-07-16T19:13:41-04:00
+featured_image: "img/airglow-ripples-over-tibet.jpg"
 ---
+
+> *Image Credit & Copyright: "Airglow Ripples over Tibet": [Jeff Dai](http://www.flickr.com/photos/jeffdai/)
+> Obtained from [nasa.gov](https://apod.nasa.gov/apod/ap221120.html)*
 
 Little things that could be overheard of strangers or read on the back of a bus bench, which wield an indefatigable demand for pause that ripples in
 unexpected ways.
